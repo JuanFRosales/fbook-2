@@ -1,2 +1,1 @@
-# Facebook 2
-##Parody app
+# Facebook 2 - Parody app
