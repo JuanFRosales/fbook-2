@@ -1,6 +1,5 @@
 import {useEffect, useReducer} from 'react';
 import {Like, MediaItemWithOwner} from '../types/DBTypes';
-// import {useLike} from '../hooks/apiHooks';
 import {useLike} from '../hooks/graphQLHooks';
 
 type LikeState = {

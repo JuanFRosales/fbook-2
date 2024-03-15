@@ -35,7 +35,7 @@ const UploadProfilePicture = () => {
     }
   };
 
-  const {handleSubmit, handleInputChange, inputs} = useForm(
+  const {handleSubmit} = useForm(
     doUpload,
     initValues,
   );

@@ -1,4 +1,3 @@
-// ProtectedRoute.tsx
 import {Navigate, useLocation} from 'react-router-dom';
 import {useUserContext} from '../hooks/ContextHooks';
 

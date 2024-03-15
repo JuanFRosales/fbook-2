@@ -21,12 +21,12 @@ const Upload = () => {
       if (!token || !file) {
         return;
       }
-      // TODO: call postFile function (see below)
+      //  call postFile function 
       const fileResult = await postFile(file, token);
-      // TODO: call postMedia function (see below)
+      //  call postMedia function
       const mediaResult = await postMedia(fileResult, inputs, token);
       alert(mediaResult.message);
-      // TODO: redirect to Home
+      //redirect to Home
       navigate('/');
     } catch (e) {
       console.log((e as Error).message);
