@@ -4,10 +4,11 @@ import Profile from './views/Profile';
 import Upload from './views/Upload';
 import Layout from './views/Layout';
 import Login from './views/Login';
+import Register from './views/Register';
 import Logout from './views/Logout';
+import UploadProfilePicture from './views/UpdateProfilePicture';
 import {UserProvider} from './contexts/UserContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Example from './components/Example';
 import {UpdateProvider} from './contexts/UpdateContext';
 
 const App = () => {
@@ -36,7 +37,15 @@ const App = () => {
               />
               <Route path="/login" element={<Login />} />
               <Route path="/logout" element={<Logout />} />
-              <Route path="/example" element={<Example />} />
+              <Route path="/register" element={<Register />} />
+              <Route
+                path="/upload-profile-picture"
+                element={
+                  <ProtectedRoute>
+                    <UploadProfilePicture />
+                  </ProtectedRoute>
+                }
+              />
             </Route>
           </Routes>
         </UpdateProvider>

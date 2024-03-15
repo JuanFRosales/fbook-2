@@ -1,11 +1,9 @@
 type UserLevel = {
-  // level_id: number; // REST API
   level_id: string; // GraphQL
   level_name: 'Admin' | 'User' | 'Guest';
 };
 
 type User = {
-  // user_id: number; // REST API
   user_id: string; // GraphQL
   username: string;
   password: string;
@@ -14,9 +12,8 @@ type User = {
   created_at: Date | string;
 };
 
+
 type MediaItem = {
-  // media_id: number; // REST API
-  // user_id: number; // REST API
   media_id: string; // GraphQL
   user_id: string; // GraphQL
   filename: string;
@@ -29,8 +26,6 @@ type MediaItem = {
 };
 
 type Comment = {
-  // comment_id: number; // REST API
-  // media_id: number; // REST API
   comment_id: string; // GraphQL
   media_id: string; // GraphQL
   user_id: number;
@@ -39,9 +34,6 @@ type Comment = {
 };
 
 type Like = {
-  // like_id: number; // REST API
-  // media_id: number; // REST API
-  // user_id: number; // REST API
   like_id: string; // GraphQL
   media_id: string; // GraphQL
   user_id: string; // GraphQL
@@ -49,9 +41,6 @@ type Like = {
 };
 
 type Rating = {
-  // rating_id: number; // REST API
-  // media_id: number; // REST API
-  // user_id: number; // REST API
   rating_id: string; // GraphQL
   media_id: string; // GraphQL
   user_id: string; // GraphQL
@@ -60,14 +49,11 @@ type Rating = {
 };
 
 type Tag = {
-  // tag_id: number; // REST API
   tag_id: string; // GraphQL
   tag_name: string;
 };
 
 type MediaItemTag = {
-  // media_id: number; // REST API
-  // tag_id: number; // REST API
   media_id: string; // GraphQL
   tag_id: string; // GraphQL
 };
@@ -103,10 +89,8 @@ type UserWithNoPassword = Omit<UserWithLevel, 'password'>;
 
 type TokenContent = Pick<User, 'user_id'> & Pick<UserLevel, 'level_name'>;
 
-// for REST API
-// type MediaItemWithOwner = MediaItem & Pick<User, 'username'>;
 
-// FOR GRAPHQL
+// GRAPHQL
 type MediaItemWithOwner = MediaItem & {
   owner: User;
   tags?: Tag[];

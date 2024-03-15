@@ -65,6 +65,14 @@ const Layout = () => {
                 </Link>
               </li>
             )}
+            <li>
+              <Link
+                className="block p-4 text-center text-slate-50 hover:bg-slate-700"
+                to="/register"
+              >
+                Register
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

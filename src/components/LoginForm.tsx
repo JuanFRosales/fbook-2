@@ -54,6 +54,11 @@ const LoginForm = () => {
             Login
           </button>
         </div>
+        <div>
+          <p className="text-center">
+  
+          </p>
+        </div>
       </form>
     </>
   );

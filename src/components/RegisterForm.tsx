@@ -99,7 +99,7 @@ const RegisterForm = () => {
             className="m-3 w-1/3 rounded-md bg-slate-700 p-3"
             type="submit"
           >
-            Register
+            Create User
           </button>
         </div>
       </form>
