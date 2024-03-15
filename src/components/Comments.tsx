@@ -4,7 +4,7 @@ import {useForm} from '../hooks/formHooks';
 import {useCommentStore} from '../store';
 import {MediaItemWithOwner} from '../types/DBTypes';
 import {useComment} from '../hooks/graphQLHooks';
-// import {useComment} from '../hooks/apiHooks';
+
 
 const Comments = ({item}: {item: MediaItemWithOwner}) => {
   const {comments, setComments} = useCommentStore();
@@ -74,7 +74,7 @@ const Comments = ({item}: {item: MediaItemWithOwner}) => {
                 className=" w-1/6 rounded-md bg-slate-700 p-3"
                 type="submit"
               >
-                &#x1F4AC;
+                Post
               </button>
             </div>
           </form>

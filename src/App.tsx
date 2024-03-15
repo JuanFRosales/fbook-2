@@ -1,5 +1,6 @@
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Home from './views/Home';
+import Info from './views/Info';
 import Profile from './views/Profile';
 import Upload from './views/Upload';
 import Layout from './views/Layout';
@@ -19,6 +20,7 @@ const App = () => {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
+              <Route path="/comments" element={<Info  />} />
               <Route
                 path="/profile"
                 element={

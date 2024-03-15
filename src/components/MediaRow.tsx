@@ -1,17 +1,15 @@
-import { MediaItemWithOwner} from '../types/DBTypes';
+import {MediaItemWithOwner} from '../types/DBTypes';
 import {useUpdateContext, useUserContext} from '../hooks/ContextHooks';
 import {useMedia} from '../hooks/graphQLHooks';
-import Comments from './Comments';
 import Likes from './Likes';
+import Comment from './Comment';
+import {Link} from 'react-router-dom';
 
 const MediaRow = (props: {item: MediaItemWithOwner}) => {
   const {item} = props;
   const {user} = useUserContext();
   const {deleteMedia} = useMedia();
   const {update, setUpdate} = useUpdateContext();
-
-
-
 
   const deleteHandler = async () => {
     const cnf = confirm('Are you sure you want to delete this media?');
@@ -43,7 +41,7 @@ const MediaRow = (props: {item: MediaItemWithOwner}) => {
       </div>
       <div className="align-center items-center">
         <img
-          className="p-20 mb-4 h-full w-full rounded-lg object-cover align-middle leading-none shadow-lg"
+          className="mb-4 h-full w-full rounded-lg object-cover p-20 align-middle leading-none shadow-lg"
           src={item.filename}
           alt={item.title}
         />
@@ -55,9 +53,17 @@ const MediaRow = (props: {item: MediaItemWithOwner}) => {
             {' '}
             {new Date(item.created_at).toLocaleString('fi-FI')}
           </p>
-
           <Likes item={item} />
-          <Comments item={item} />
+          <Comment item={item} />
+          <div className="align-center flex justify-center">
+            <Link
+              className=" flex w-full justify-center rounded-md bg-slate-700 p-3"
+              to="/comments"
+              state={item}
+            >
+              View Comments
+            </Link>
+          </div>
 
           {user &&
             (user.user_id === item.user_id || user.level_name === 'Admin') && (
