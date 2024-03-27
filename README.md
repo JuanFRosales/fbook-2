@@ -17,9 +17,18 @@ This project is a simple media uploading site that users can use to post their o
 - Vite
 - Teachers Backend
 
+## Bugs
+- Comments load to all posts instead of only one
+- Profile picture uploading doesn't work
+
+
 ## Setup Instructions
 1. Clone the repository to your local machine.
 2. Install project dependencies by navigating to the project directory and running `npm install`.
 3. Create env.local from sample.
 4. Use eduroam wifi or metropolia vpn.
+5. If you are on eduroam or metropolia vpn you can go directly to
+![Facebook 2](https://users.metropolia.fi/~juanros/react-project/)
+
+## Images
 
