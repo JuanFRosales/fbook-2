@@ -27,8 +27,8 @@ This project is a simple media uploading site that users can use to post their o
 2. Install project dependencies by navigating to the project directory and running `npm install`.
 3. Create env.local from sample.
 4. Use eduroam wifi or metropolia vpn.
-5. If you are on eduroam or metropolia vpn you can go directly to
-![Facebook 2](https://users.metropolia.fi/~juanros/react-project/)
+5. If you are on eduroam or metropolia vpn you can go directly to 
+[Facebook2](https://users.metropolia.fi/~juanros/react-project/)
 
 ## Images
 ![Näyttökuva 2024-3-26 kello 14 31 12](https://github.com/JuanFRosales/fbook-2/assets/111979981/5a370a2c-9437-4d0d-82e3-4355ace68bd7)
