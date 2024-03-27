@@ -31,4 +31,12 @@ This project is a simple media uploading site that users can use to post their o
 ![Facebook 2](https://users.metropolia.fi/~juanros/react-project/)
 
 ## Images
+![Näyttökuva 2024-3-26 kello 14 31 12](https://github.com/JuanFRosales/fbook-2/assets/111979981/5a370a2c-9437-4d0d-82e3-4355ace68bd7)
+
+![Näyttökuva 2024-3-26 kello 14 31 31](https://github.com/JuanFRosales/fbook-2/assets/111979981/5121e657-4272-4df3-aa67-3be79e8ff3d6)
+
+
+![Näyttökuva 2024-3-26 kello 14 31 53](https://github.com/JuanFRosales/fbook-2/assets/111979981/67fcc575-abd4-439c-9158-91be204b405b)
+
+
 
